@@ -3,10 +3,10 @@ from tensorflow import keras
 
 def create_sequential_linear_neural_network(units: int, input_scale: int, use_bias: bool = True,
                                             learning_rate: float = 0.1, momentum: float = 0.0,
-                                            kernel_initializer: keras.initializers.Constant =
-                                            keras.initializers.Constant(1),
-                                            bias_initializer: keras.initializers.Constant =
-                                            keras.initializers.Constant(1)) -> keras.Sequential:
+                                            kernel_initializer: keras.initializers.Constant = keras.initializers.Constant(1),
+                                            bias_initializer: keras.initializers.Constant = keras.initializers.Constant(1)) -> keras.Sequential:
+    # 1. req ~
+    # 2. перепроверить ф-ию графиков
 
     model = keras.Sequential()
 
